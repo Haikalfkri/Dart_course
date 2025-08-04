@@ -16,4 +16,27 @@ void main() {
    */
 
 
+  // Literals
+  var isCool = true;
+  int x = 2;
+  "John";
+  10.5;
+
+  // Various ways to define String literals in Dart
+  String s1 = 'String1';
+  String s2 = "String2";
+  String s3 = 'It\'s easy';
+  String s4 = "It's easy";
+
+  // String Interpolation
+  String name = "John";
+  String message = "Hello $name";
+
+  print(message);
+  print("The number of characters in String is ${name.length}");
+
+  int num1 = 10;
+  int num2 = 2;
+
+  print("The sum of $num1 and $num2 is ${num1 + num2}");
 }
