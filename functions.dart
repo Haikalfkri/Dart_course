@@ -8,6 +8,13 @@
 void main() {
 
   findPerimeter(4, 2);
+  
+  int rectArea = getArea(5, 4);
+  print("Rectangle area is $rectArea");
+
+  perimeter(10, 2);
+  int areas = area(2, 2);
+  print("Rectangle area with fat arrow is $areas");
 
 }
 
@@ -18,5 +25,15 @@ void findPerimeter(int length, int breadth) {
   int perimeter = 2 * (length + breadth);
 
   print("The perimeter is $perimeter");
+}
+
+int getArea(int length, int breadth) {
+  
+  int area = length * breadth;
+  return area;
 
 }
+
+// FAT Arrow
+void perimeter(int length, int breadth) => print("The perimeter with fat arrow is ${2 * (length + breadth)}");
+int area(int length, int breadth) => length * breadth;
