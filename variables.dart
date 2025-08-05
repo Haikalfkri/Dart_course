@@ -26,11 +26,9 @@ void main() {
 }
 
 
-class Person{
-
+class Person {
   final String firstName = "John";
   
   // instance variable can be final but cannot be cons
   static const String lastName = "Doe";
-
 }

@@ -38,12 +38,50 @@ void main() {
 
 
   // exploring do while loop
-  int i = 1;
-  do {
-    if (i % 2 == 0) {
-      print(i);
+  // int i = 1;
+  // do {
+  //   if (i % 2 == 0) {
+  //     print(i);
+  //   }
+  //   i++;
+  // } while (i <= 10);
+
+
+  // break
+  // for (int i = 1; i <= 10; i++) {
+  //   print(i);
+  //   if (i == 5) {
+  //     break;
+  //   }
+  // }
+
+
+  // nested loop
+  // break, labels
+  // outerLoop: for (int i = 1; i <= 3; i++) {
+  //   innerLoop: for (int j = 1; j <= 3; j++) {
+  //     print("$i $j");
+
+  //     if (i == 2 && j == 2) {
+  //       break outerLoop;
+  //     }
+  //   }
+  // }
+
+
+  // continue
+  outerLoop: for (int i = 1; i <= 3; i++) {
+    // if (i == 5) {
+    //   continue;
+    // }
+    // print(i);
+
+    for (int j = 1; j <= 3; j++) {
+      if (i == 2 && j == 2) {
+        continue outerLoop;
+      }
+      print("$i $j");
     }
-    i++;
-  } while (i <= 10);
+  }
 
 }
